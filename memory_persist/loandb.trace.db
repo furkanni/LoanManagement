@@ -1,0 +1,315 @@
+2022-02-25 00:12:10 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+insert into CREDIT_SCORE VALUES(1,100) [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:319)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp.query(WebApp.java:1092)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-25 00:12:19 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+insert into CREDIT_SCORE VALUES(1,100) [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:319)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp.query(WebApp.java:1092)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-25 02:37:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE LOAN ADD COLUMN LIMIT[*] DOUBLE"; expected "identifier"; SQL statement:
+alter table loan add column limit double [42001-200]
+2022-02-25 02:41:54 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CREDIT_SCORE
+
+
+INSERT INTO[*] CREDIT_SCORE VALUES(2,4,1200)"; SQL statement:
+select * from CREDIT_SCORE
+
+
+INSERT INTO CREDIT_SCORE VALUES(2,4,1200) [42000-200]
+2022-02-25 02:42:03 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CREDIT_SCORE
+
+
+INSERT INTO[*] CREDIT_SCORE VALUES(2,4,1200)"; SQL statement:
+select * from CREDIT_SCORE
+
+
+INSERT INTO CREDIT_SCORE VALUES(2,4,1200) [42000-200]
+2022-02-25 02:44:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE LOAN ADD COLUMN LIMIT[*] DOUBLE"; expected "identifier"; SQL statement:
+alter table loan add column limit double [42001-200]
+2022-02-25 02:45:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE LOAN ADD COLUMN LIMIT[*] DOUBLE"; expected "identifier"; SQL statement:
+alter table loan add column limit double [42001-200]
+2022-02-25 02:46:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE LOAN (ID BIGINT GENERATED BY DEFAULT AS IDENTITY, APPROVAL BOOLEAN, CUSTOMER_ID INTEGER NOT NULL, LIMIT[*] DOUBLE, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table loan (id bigint generated by default as identity, approval boolean, customer_id integer not null, limit double, primary key (id)) [42001-200]
+2022-02-25 02:47:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE LOAN (ID BIGINT GENERATED BY DEFAULT AS IDENTITY, APPROVAL BOOLEAN, CUSTOMER_ID INTEGER NOT NULL, LIMIT[*] DOUBLE, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table loan (id bigint generated by default as identity, approval boolean, customer_id integer not null, limit double, primary key (id)) [42001-200]
+2022-02-25 02:54:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE LOAN (ID BIGINT GENERATED BY DEFAULT AS IDENTITY, APPROVAL BOOLEAN, CUSTOMER_ID INTEGER NOT NULL, LIMIT[*] DOUBLE, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table loan (id bigint generated by default as identity, approval boolean, customer_id integer not null, limit double, primary key (id)) [42001-200]
+2022-02-25 02:56:12 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE LOAN (ID BIGINT GENERATED BY DEFAULT AS IDENTITY, APPROVAL BOOLEAN, CUSTOMER_ID INTEGER NOT NULL, LIMIT[*][*] DOUBLE, PRIMARY KEY (ID)"; expected "identifier"; SQL statement:
+CREATE TABLE LOAN (ID BIGINT GENERATED BY DEFAULT AS IDENTITY, APPROVAL BOOLEAN, CUSTOMER_ID INTEGER NOT NULL, LIMIT[*] DOUBLE, PRIMARY KEY (ID) [42001-200]
+2022-02-25 02:56:42 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE LOAN
+ (ID BIGINT GENERATED BY DEFAULT AS IDENTITY,
+ APPROVAL BOOLEAN,
+ CUSTOMER_ID INTEGER NOT NULL, 
+LIMIT[*][*] DOUBLE,
+ PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+CREATE TABLE LOAN
+ (ID BIGINT GENERATED BY DEFAULT AS IDENTITY,
+ APPROVAL BOOLEAN,
+ CUSTOMER_ID INTEGER NOT NULL, 
+LIMIT[*] DOUBLE,
+ PRIMARY KEY (ID)) [42001-200]
+2022-02-25 02:56:47 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE LOAN
+ (ID BIGINT GENERATED BY DEFAULT AS IDENTITY,
+ APPROVAL BOOLEAN,
+ CUSTOMER_ID INTEGER NOT NULL, 
+LIMIT[*][*] DOUBLE,
+ PRIMARY KEY (ID)"; expected "identifier"; SQL statement:
+CREATE TABLE LOAN
+ (ID BIGINT GENERATED BY DEFAULT AS IDENTITY,
+ APPROVAL BOOLEAN,
+ CUSTOMER_ID INTEGER NOT NULL, 
+LIMIT[*] DOUBLE,
+ PRIMARY KEY (ID) [42001-200]
+2022-02-25 02:56:48 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE LOAN
+ (ID BIGINT GENERATED BY DEFAULT AS IDENTITY,
+ APPROVAL BOOLEAN,
+ CUSTOMER_ID INTEGER NOT NULL, 
+LIMIT[*][*] DOUBLE,
+ PRIMARY KEY (ID)"; expected "identifier"; SQL statement:
+CREATE TABLE LOAN
+ (ID BIGINT GENERATED BY DEFAULT AS IDENTITY,
+ APPROVAL BOOLEAN,
+ CUSTOMER_ID INTEGER NOT NULL, 
+LIMIT[*] DOUBLE,
+ PRIMARY KEY (ID) [42001-200]
+2022-02-25 02:58:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE LOAN (ID BIGINT GENERATED BY DEFAULT AS IDENTITY, APPROVAL BOOLEAN, LIMIT[*] DOUBLE, CUSTOMER_ID INTEGER NOT NULL, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table loan (id bigint generated by default as identity, approval boolean, limit double, customer_id integer not null, primary key (id)) [42001-200]
+2022-02-25 02:58:45 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE LOAN (ID BIGINT GENERATED BY DEFAULT AS IDENTITY, APPROVAL BOOLEAN, LIMIT[*][*] DOUBLE, CUSTOMER_ID INTEGER NOT NULL, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+CREATE TABLE LOAN (ID BIGINT GENERATED BY DEFAULT AS IDENTITY, APPROVAL BOOLEAN, LIMIT[*] DOUBLE, CUSTOMER_ID INTEGER NOT NULL, PRIMARY KEY (ID)) [42001-200]
+2022-02-25 03:00:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CREDIT_LIMIT" not found; SQL statement:
+INSERT INTO CREDIT_LIMIT VALUES(4,1200) [42102-200]
+2022-02-25 03:00:23 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CREDIT_LIMIT" not found; SQL statement:
+INSERT INTO CREDIT_LIMIT VALUES(1,4,1200) [42102-200]
+2022-02-25 03:00:28 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CREDIT_LIMIT" not found; SQL statement:
+INSERT INTO CREDIT_LIMIT VALUES(3,4,1200) [42102-200]
+2022-02-25 03:00:34 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CREDIT_LIMIT" not found; SQL statement:
+INSERT INTO CREDIT_LIMIT VALUES(10,4,1200) [42102-200]
+2022-02-25 03:00:58 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CREDIT_LIMIT" not found; SQL statement:
+select * from CREDIT_LIMIT [42102-200]
+2022-02-25 03:01:13 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CREDIT_LIMIT" not found; SQL statement:
+select * from CREDIT_LIMIT [42102-200]
+2022-02-25 03:13:16 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CREDIT_SCORE
+
+
+UPDATE CREDIT_SCORE[*] SET SCORE=100"; SQL statement:
+select * from CREDIT_SCORE
+
+
+update CREDIT_SCORE SET SCORE=100 [42000-200]
+2022-02-25 03:13:23 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CREDIT_SCORE
+
+
+UPDATE CREDIT_SCORE[*] SET SCORE=100"; SQL statement:
+select * from CREDIT_SCORE
+
+
+update CREDIT_SCORE SET SCORE=100 [42000-200]
+2022-02-26 04:38:41 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "LAON" not found; SQL statement:
+select * from laon [42102-200]
+2022-02-26 05:12:27 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+insert into credit_score (id, customer_id, score) values (750) [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:319)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp.query(WebApp.java:1092)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-27 01:40:36 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (CREDIT_SCORE: ""ID"" BIGINT DEFAULT NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_DAE9BB99_7860_4203_8619_169A5B521ADC"" NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_DAE9BB99_7860_4203_8619_169A5B521ADC"")"; SQL statement:
+INSERT INTO "PUBLIC"."CREDIT_SCORE"("ID","CUSTOMER_ID","SCORE")VALUES(?,?,?) [22018-200]
+2022-02-27 01:40:36 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (CREDIT_SCORE: ""ID"" BIGINT DEFAULT NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_DAE9BB99_7860_4203_8619_169A5B521ADC"" NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_DAE9BB99_7860_4203_8619_169A5B521ADC"")"; SQL statement:
+INSERT INTO "PUBLIC"."CREDIT_SCORE"("ID","CUSTOMER_ID","SCORE")VALUES(?,?,?) [22018-200]
